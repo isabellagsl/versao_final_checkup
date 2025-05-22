@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckUp - Saúde Digital</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="site-header">
+        <nav class="main-nav container">
+            <div class="brand-logo">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="CheckUp">
+                <span>CHECKUP</span>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#services"><i class="fas fa-stethoscope"></i> Serviços</a></li>
+                <li><a href="#about"><i class="fas fa-info-circle"></i> Sobre Nós</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contato</a></li>
+                <li><a href="#blog"><i class="fas fa-newspaper"></i> Blog</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção Hero/Banner Principal -->
+        <section class="hero-banner">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Saúde de qualidade <span>ao seu alcance</span></h1>
+                    <p class="hero-subtitle">Consultas online com especialistas quando e onde você precisar</p>
+                    <div class="hero-actions">
+                        <a href="register.html" class="button button-primary button-large">Comece Agora</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="{{ url_for('static', filename='medico.png') }}" alt="Médico virtual">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Serviços -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Nossos Serviços</h2>
+                    <p>Atendimento humanizado com tecnologia de ponta</p>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Card de Serviço 1 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3>Consultas Médicas</h3>
+                        <p>Várias especialidades disponíveis 24/7 com nossos médicos credenciados</p>
+                        <a href="#" class="service-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <!-- Card de Serviço 2 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                        <h3>Receitas Digitais</h3>
+                        <p>Receituário médico válido em todo território nacional</p>
+                        <a href="#" class="service-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <!-- Card de Serviço 3 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3>Exames</h3>
+                        <p>Solicitação de exames com laudo digital e acompanhamento</p>
+                        <a href="#" class="service-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <!-- Card de Serviço 4 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-file-medical"></i>
+                        </div>
+                        <h3>Atestados</h3>
+                        <p>Emitimos atestados médicos com validade legal</p>
+                        <a href="#" class="service-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <!-- Card de Serviço 5 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Monitoramento</h3>
+                        <p>Acompanhamento contínuo de suas métricas de saúde</p>
+                        <a href="#" class="service-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <!-- Card de Serviço 6 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Saúde Mental</h3>
+                        <p>Atendimento psicológico e psiquiátrico especializado</p>
+                        <a href="#" class="service-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre Nós -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <h2>Sobre a CheckUp</h2>
+                    <p>Somos uma plataforma de saúde digital comprometida em levar atendimento médico de qualidade para todos, de forma acessível e conveniente.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="{{ url_for('static', filename='logo.png') }}" alt="CheckUp">
+                    <span>CHECKUP</span>
+                </div>
+                
+                <div class="footer-links-container">
+                    <!-- Links de Serviços -->
+                    <div class="footer-links-group">
+                        <h4>Serviços</h4>
+                        <ul class="footer-links-list">
+                            <li><a href="#">Consultas</a></li>
+                            <li><a href="#">Exames</a></li>
+                            <li><a href="#">Atestados</a></li>
+                            <li><a href="#">Receitas</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Links Institucionais -->
+                    <div class="footer-links-group">
+                        <h4>Institucional</h4>
+                        <ul class="footer-links-list">
+                            <li><a href="#">Sobre nós</a></li>
+                            <li><a href="#">Profissionais</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Trabalhe conosco</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 CheckUp. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

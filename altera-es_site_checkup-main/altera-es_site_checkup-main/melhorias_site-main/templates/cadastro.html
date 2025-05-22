@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - CheckUp</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='cad.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}"> -->
+</head>
+<body>
+    <!-- Cabeçalho com logo -->
+    <header class="header">
+        <a href="/" class="logo" aria-label="Página inicial da CheckUp">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo da CheckUp" width="40" height="40">
+            <span>CHECKUP</span>
+        </a>
+    </header>
+
+    <!-- Formulário de Cadastro -->
+    <main class="container_form">
+        <h1>Cadastro de Usuário</h1>
+
+        <form class="form" action="{{ url_for('cadastro') }}" method="POST" autocomplete="on">
+            <div class="form_grupo">
+                <label for="nome" class="form_label">Nome Completo</label>
+                <input type="text" id="nome" name="nome" class="form_input" placeholder="Digite seu nome completo" required autocomplete="name">
+            </div>
+
+            <div class="form_grupo">
+                <label for="cpf" class="form_label">CPF</label>
+                <input type="text" id="cpf" name="cpf" class="form_input" placeholder="000.000.000-00" required autocomplete="off" inputmode="numeric" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
+            </div>
+
+            <div class="form_grupo">
+                <label for="telefone" class="form_label">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" class="form_input" placeholder="(00) 00000-0000" required autocomplete="tel">
+            </div>
+            
+            <div class="form_grupo">
+                <label for="email" class="form_label">E-mail</label>
+                <input type="email" id="email" name="email" class="form_input" placeholder="seu@email.com" required autocomplete="email">
+            </div>
+            
+            <div class="form_grupo">
+                <label for="data_nascimento" class="form_label">Data de Nascimento</label>
+                <input type="date" id="data_nascimento" name="data_nascimento" class="form_input" required>
+            </div>
+
+            <div class="form_grupo">
+                <span class="form_label">Sexo:</span>
+                <div class="radio-options">
+                    <label class="radio-label">
+                        <input type="radio" name="sexo" value="masculino" required>
+                        Masculino
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="sexo" value="feminino">
+                        Feminino
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="sexo" value="outro">
+                        Outro
+                    </label>
+                </div>
+            </div>
+            
+            <div class="form_grupo">
+                <label for="senha" class="form_label">Senha</label>
+                <input type="password" id="senha" name="senha" class="form_input" placeholder="Crie uma senha forte" required autocomplete="new-password">
+            </div>
+            
+            <div class="form_grupo">
+                <label for="confirmar_senha" class="form_label">Confirmar Senha</label>
+                <input type="password" id="confirmar_senha" name="confirmar_senha" class="form_input" placeholder="Repita sua senha" required autocomplete="new-password">
+            </div>
+            
+            <div class="form_grupo">
+                <button type="submit" class="submit_btn" aria-label="Finalizar cadastro">Cadastrar</button>
+            </div>
+            
+            <div class="login-link">
+                Já possui conta? <a href="{{ url_for('login') }}">Faça login</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
