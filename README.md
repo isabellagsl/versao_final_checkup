@@ -1,33 +1,33 @@
-EN-🩺 CheckUp – Digital Health
+🩺 CheckUp - Digital Health
 
-CheckUp is a modern telemedicine platform designed to connect patients with healthcare professionals quickly and securely. This landing page was built with a strong focus on user experience (UX) and clear communication of digital medical services.
+CheckUp is a modern telemedicine platform developed to connect patients with healthcare professionals with agility and security. This landing page was built with a focus on user experience (UX) and clarity of information about digital medical services.
 
 🚀 Features
 
-Responsive Design: Optimized for mobile devices, tablets, and desktops.
+Responsive Design: Adapted for mobile devices, tablets, and desktops.
 
 Service Grid: Clear display of specialties (Consultations, Prescriptions, Exams, etc.).
 
-Flask Integration: Structured for the Python/Flask ecosystem using url_for.
+Flask Integration: Structure prepared for the Python/Flask ecosystem using url_for.
 
-Intuitive Interface: Smooth navigation and strategically placed calls-to-action (CTAs).
+Intuitive Interface: Smooth navigation and strategic calls to action (CTAs).
 
-Dynamic Icons: Uses the FontAwesome library for enhanced visual identification.
+Dynamic Icons: Use of the FontAwesome library for better visual identification.
 
 🛠️ Technologies Used
 
-The project combines the “golden trio” of front-end development with a touch of back-end:
+The project uses the “golden trio” of front-end with a touch of back-end:
 
 Technology	Purpose
-HTML5	Semantic content structure
-CSS3	Styling, Grid and Flexbox layout
-Flask (Jinja2)	Template engine for dynamic routes and links
-FontAwesome	Vector icon library
+HTML5	Semantic structuring of content.
+CSS3	Styling, Grid and Flexbox layout.
+Flask (Jinja2)	Template engine for dynamic routes and links.
+FontAwesome	Vector icon library.
 ⚙️ How to Run the Project
 
 Clone the repository:
 
-git clone https://github.com/your-username/checkup-health.git
+git clone https://github.com/seu-usuario/checkup-saude.git
 
 Install Flask:
 
@@ -36,15 +36,14 @@ pip install flask
 Start the server:
 
 python app.py
-🤝 Contributing
+🤝 Contribution
 
-Feel free to open an Issue or submit a Pull Request if you have suggestions for improvement.
+Feel free to open an Issue or submit a Pull Request if you have suggestions for improvement!
 
-Note: This project is intended for educational purposes and interface demonstration.
-
-
-
-PT-BR # 🩺 CheckUp - Saúde Digital
+Note: This project is for educational and interface demonstration purposes.
+ 
+ PT-BR:
+ # 🩺 CheckUp - Saúde Digital
 
 O **CheckUp** é uma plataforma de telemedicina moderna desenvolvida para conectar pacientes a profissionais de saúde com agilidade e segurança. Esta landing page foi construída com foco na experiência do usuário (UX) e na clareza das informações sobre serviços médicos digitais.
 
