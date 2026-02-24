@@ -27,7 +27,7 @@ FontAwesome	Vector icon library.
 
 Clone the repository:
 
-git clone https://github.com/seu-usuario/checkup-saude.git
+git clone 
 
 Install Flask:
 
@@ -74,11 +74,6 @@ O projeto utiliza o "trio de ouro" do front-end com uma pitada de back-end:
 ## ⚙️ Como Executar o Projeto
 
 1. **Clone o repositório:**
-```bash
-git clone https://github.com/seu-usuario/checkup-saude.git
-
-```
-
 
 2. **Instale o Flask:**
 ```bash
